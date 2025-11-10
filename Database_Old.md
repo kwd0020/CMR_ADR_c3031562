@@ -4,8 +4,10 @@
 Due to the nature of the clients (Banking and Telecom Companies), ABC(Limited) requires a multi-tenant Complaint Management System which complies to GDPR practices to ensure users' personal data remains secure and confidential. Furthermore, it is also possible that future tenants may join the system therefore the database must be designed in such a way that allows a new tenant to seamlessly integrate into the system. To ensure compliance with GDPR the system shall perform backups and "ensure data integrity" to prevent data loss and data isolation must be integrated to every tenants.
 ## Considered Frontend Technologies
 
-* MySQL, Relational Database
-* MongoDB, Non-relational Database
+* MySQL, Relational 
+* PostgreSQL, Relational 
+* MariaDB, Relational
+* MongoDB, Non-Relational
 
 ## Decision Outcome
 MySQL
