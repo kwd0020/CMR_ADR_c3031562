@@ -4,10 +4,11 @@
 
 
 ## Considered Deployment Technologies
-
-* 
+* Microsoft Azure
+* AWS
+* Docker
 ## Decision Outcome
-
+Microsoft Azure
 
 ### Consequences
 
