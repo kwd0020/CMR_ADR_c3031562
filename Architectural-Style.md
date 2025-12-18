@@ -8,13 +8,13 @@ The system must ensure reliability, scalability (projected 20 million customers 
 ## Considered Architectural Styles
 
 * Three-Tier 
-* Layered Monolith 
+* Monolith (MVC) 
 * General web application
 
 ## Decision Outcome
-Layered Monolith
+Monolith (MVC)
 
 ### Consequences
 
-* Good, because this style offers a high degree of scalability as each layer (business, presentation and data access) are seperated from each other into physical or virtual tiers. This typically means that each layer can be developed, tested and maintained independantly and if one layer experiences high traffic or volume resources can be allocated only to where they are required. Furthermore, with the seperation of presentation and database layers this means they can only communicate through the application layer, preventing users from directly accessing the database.
+* Good, because this style offers a high degree of scalability as each layer (model, view, controllers) are seperated from each other into physical or virtual tiers. This typically means that each layer can be developed, tested and maintained independantly and if one layer experiences high traffic or volume resources can be allocated only to where they are required. Furthermore, with the seperation of presentation and database layers this means they can only communicate through the application layer, preventing users from directly accessing the database.
 * Bad, if the system is not designed efficienctly the layers may become too dependant on each other which reduces the scalability as it would be more difficult to scale any specific part as it will affect other layers. Furthermore the increased complexity could work against the system and prove to be more difficult to maintain, develop and test as a process will involve multiple layers to work.
